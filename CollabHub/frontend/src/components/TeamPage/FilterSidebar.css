@@ -1,0 +1,43 @@
+.filter {
+    background: transparent;
+    padding-top: 6px;
+}
+
+.filter h4 {
+    color: #cfeafe;
+    margin: 0 0 14px;
+    font-size: 18px
+}
+.filter-block{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.filter-section {
+    background: transparent;
+    padding: 12px 0px;
+    margin-bottom: 12px
+}
+
+.section-title {
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.radio,
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    color: var(--muted);
+    font-size: 14px
+}
+
+.radio input[type="radio"],
+.check input[type="checkbox"] {
+    width: 16px;
+    height: 16px
+}

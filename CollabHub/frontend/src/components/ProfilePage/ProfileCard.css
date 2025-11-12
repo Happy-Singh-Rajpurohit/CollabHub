@@ -1,0 +1,61 @@
+.profile-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    box-shadow: 0 8px 20px rgba(2, 7, 10, 0.5);
+}
+
+/* avatar */
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 999px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* info */
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    font-size: 20px;
+    margin: 0;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.role {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.bio {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+/* button */
+.edit-btn {
+    margin-top: 8px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}

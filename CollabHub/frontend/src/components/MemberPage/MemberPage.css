@@ -1,0 +1,198 @@
+/* General Page Layout */
+.find-container {
+    background-color: #0f1116;
+    color: #f1f1f1;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.find-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.find-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.find-subtitle {
+    color: #aaa;
+    margin-bottom: 1.5rem;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+}
+
+.menu-btn {
+    background: #1e1f25;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: #2c2e35;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #1c1e24;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 180px;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #ddd;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: #2a2d36;
+}
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.filter-input,
+.filter-select {
+    background: #1c1e24;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    width: 200px;
+    outline: none;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Member Cards */
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1c1e24;
+    padding: 1.2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-6px);
+    background: #22252f;
+}
+
+.member-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.member-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.member-info p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.member-skills {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: #2c2e35;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.connect-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.connect-btn:hover {
+    background: #005ecc;
+}
+
+/* No Results */
+.no-results {
+    color: #bbb;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .find-title {
+        font-size: 1.8rem;
+    }
+
+    .filter-input,
+    .filter-select {
+        width: 100%;
+    }
+
+    .member-card {
+        text-align: center;
+    }
+}
