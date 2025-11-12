@@ -1,0 +1,170 @@
+.tabs-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* nav */
+.tabs-nav {
+    display: flex;
+    gap: 8px;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+}
+
+.tabs-nav button {
+    background: transparent;
+    border: none;
+    padding: 12px 14px;
+    color: var(--muted);
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.tabs-nav button.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* content */
+.tabs-content {
+    padding: 8px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* sections */
+.section h4 {
+    margin: 10px 0 10px 0;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.primary-chip {
+    background: var(--accent-20);
+    color: var(--accent);
+}
+
+/* prefs */
+.prefs-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pref-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.01);
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.pref-card.active {
+    border-color: var(--accent);
+    background: rgba(43, 157, 238, 0.06);
+}
+
+.pref-icon {
+    font-size: 18px;
+    color: var(--muted);
+}
+
+.pref-text {
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* teams & events lists */
+.teams,
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.empty {
+    color: var(--muted);
+    padding: 18px;
+}
+
+/* responsive: make preferences stack nicely */
+@media (max-width:720px) {
+    .prefs-row {
+        flex-direction: column;
+    }
+}
+.social-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-row {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    transition: background 0.12s ease;
+}
+
+.social-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    flex-shrink: 0;
+}
+
+.social-text {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.open-icon {
+    color: var(--muted);
+    font-size: 16px;
+}
